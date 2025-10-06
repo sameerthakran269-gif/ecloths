@@ -38,7 +38,8 @@ export default function KanjivaramSilkPage() {
       name: 'Traditional',
       image: '/kanjivaram-traditional.jpg',
       link: '#traditional',
-      description: 'Classic patterns and borders'
+      description: 'Classic patterns and borders',
+      slug:'/traditional'
     },
     {
       name: 'Temple Border',
@@ -307,7 +308,7 @@ export default function KanjivaramSilkPage() {
             {kanjivaramTypes.map((type, index) => (
               <Link
                 key={index}
-                href={type.link}
+                href={`/sarees/category/kanjivaram-silk/features${type.slug}`}
                 className="text-center group"
               >
                 <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-orange-300 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:from-amber-300 group-hover:to-orange-400 transition-all duration-200 shadow-lg">
