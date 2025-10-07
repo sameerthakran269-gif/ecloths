@@ -38,30 +38,20 @@ export default function Home() {
   ];
 
   const categories = [
+    
     {
-      name: 'Silk Sarees',
-      image: '/silk-sarees.jpg',
-      link: '/sarees/silk',
-      description: 'Luxurious handwoven silk'
-    },
-    {
-      name: 'Banarasi Sarees',
-      image: '/banarasi-sarees.jpg',
-      link: '/sarees/banarasi',
+      name: 'Sarees',
+      image: '/sarees.jpg',
+      link: '/sarees',
       description: 'Traditional craftsmanship'
     },
     {
-      name: 'Designer Suits',
-      image: '/designer-suits.jpg',
-      link: '/suits/designer',
+      name: 'Suits',
+      image: '/suits.jpg',
+      link: '/suits',
       description: 'Contemporary designs'
     },
-    {
-      name: 'Anarkali Suits',
-      image: '/anarkali-suits.jpg',
-      link: '/suits/anarkali',
-      description: 'Royal elegance'
-    }
+    
   ];
 
   const featuredProducts = [

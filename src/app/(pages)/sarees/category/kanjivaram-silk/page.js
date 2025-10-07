@@ -45,7 +45,8 @@ export default function KanjivaramSilkPage() {
       name: 'Temple Border',
       image: '/kanjivaram-temple.jpg',
       link: '#temple',
-      description: 'Inspired by temple architecture'
+      description: 'Inspired by temple architecture',
+      slug:'/temple-border'
     },
     {
       name: 'Contemporary',
