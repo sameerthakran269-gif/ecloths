@@ -52,13 +52,15 @@ export default function KanjivaramSilkPage() {
       name: 'Contemporary',
       image: '/kanjivaram-contemporary.jpg',
       link: '#contemporary',
-      description: 'Modern designs'
+      description: 'Modern designs',
+      slug:'/contemporary'
     },
     {
       name: 'Bridal Special',
       image: '/kanjivaram-bridal.jpg',
       link: '#bridal',
-      description: 'Grand wedding collection'
+      description: 'Grand wedding collection',
+      slug:'/bridal-special'
     }
   ];
 

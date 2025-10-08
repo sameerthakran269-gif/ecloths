@@ -89,8 +89,25 @@ export default function Navigation() {
                 <Search size={20} />
               </button>
 
-              {/* Account */}
-              <Link href="/account" className="p-2 text-gray-600 hover:text-rose-600 transition-colors">
+              {/* Login & Register Links */}
+              <div className="hidden md:flex items-center space-x-3">
+                <Link 
+                  href="/login" 
+                  className="text-gray-600 hover:text-rose-600 transition-colors font-medium text-sm"
+                >
+                  Login
+                </Link>
+                <span className="text-gray-300">|</span>
+                <Link 
+                  href="/register" 
+                  className="text-gray-600 hover:text-rose-600 transition-colors font-medium text-sm"
+                >
+                  Register
+                </Link>
+              </div>
+
+              {/* Mobile User Icon */}
+              <Link href="/login" className="md:hidden p-2 text-gray-600 hover:text-rose-600 transition-colors">
                 <User size={20} />
               </Link>
 
@@ -157,6 +174,24 @@ export default function Navigation() {
                   )}
                 </div>
               ))}
+              
+              {/* Mobile Login & Register Links */}
+              <div className="border-t border-gray-200 pt-2 mt-2">
+                <Link
+                  href="/login"
+                  className="block px-3 py-2 text-gray-700 hover:bg-rose-50 hover:text-rose-600 rounded-md font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/register"
+                  className="block px-3 py-2 text-gray-700 hover:bg-rose-50 hover:text-rose-600 rounded-md font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Register
+                </Link>
+              </div>
             </div>
           </div>
         )}

@@ -10,82 +10,104 @@ export default function TempleBorderKanjivaramPage() {
   const templeBorderProducts = [
     {
       id: 1,
-      name: 'Red Temple Border Kanjivaram',
-      price: '₹36,999',
-      originalPrice: '₹45,999',
-      image: '/kanjivaram-temple-1.jpg',
+      name: 'Royal Red Temple Border',
+      price: '₹39,999',
+      originalPrice: '₹48,999',
+      image: '/temple-border-1.jpg',
       rating: 4.9,
       reviews: 203,
-      color: 'Red',
-      borderStyle: 'Traditional Temple',
-      description: 'Grand red silk with elaborate temple border and gold zari',
-      features: ['Heavy Temple Border', 'Gold Zari', 'Peacock Motifs'],
-      isBestseller: true
+      color: 'Deep Red',
+      description: 'Magnificent deep red with elaborate temple border and gold zari',
+      features: ['Heavy Temple Border', 'Pure Silk', 'Gold Zari'],
+      borderType: 'Gopuram Border'
     },
     {
       id: 2,
-      name: 'Royal Blue Temple Border',
+      name: 'Emerald Temple Kanjivaram',
       price: '₹32,999',
       originalPrice: '₹39,999',
-      image: '/kanjivaram-temple-2.jpg',
+      image: '/temple-border-2.jpg',
       rating: 4.8,
-      reviews: 145,
-      color: 'Blue',
-      borderStyle: 'Elephant Temple',
-      description: 'Deep blue with elephant motifs and intricate temple architecture',
-      features: ['Elephant Motifs', 'Temple Architecture', 'Pure Silk'],
-      isBestseller: true
+      reviews: 134,
+      color: 'Emerald Green',
+      description: 'Vibrant green with intricate temple architecture motifs',
+      features: ['Temple Architecture', 'Contrast Pallu', 'Pure Silk'],
+      borderType: 'Pillar Border'
     },
     {
       id: 3,
-      name: 'Purple Temple Special',
-      price: '₹38,999',
-      originalPrice: '₹47,999',
-      image: '/kanjivaram-temple-3.jpg',
+      name: 'Navy Blue Temple Design',
+      price: '₹36,999',
+      originalPrice: '₹44,999',
+      image: '/temple-border-3.jpg',
       rating: 4.9,
       reviews: 178,
-      color: 'Purple',
-      borderStyle: 'Floral Temple',
-      description: 'Regal purple with floral temple border and detailed zari work',
-      features: ['Floral Temple', 'Heavy Zari', 'Bridal Collection'],
-      isNew: true
+      color: 'Navy Blue',
+      description: 'Rich navy blue with golden temple borders and divine motifs',
+      features: ['Divine Motifs', 'Heavy Zari', 'Bridal Collection'],
+      borderType: 'Divine Figure Border'
     },
     {
       id: 4,
-      name: 'Green Temple Border',
+      name: 'Maroon Temple Special',
+      price: '₹41,999',
+      originalPrice: '₹51,999',
+      image: '/temple-border-4.jpg',
+      rating: 5.0,
+      reviews: 95,
+      color: 'Royal Maroon',
+      description: 'Regal maroon with extensive temple border work',
+      features: ['Extra Wide Border', 'Antique Zari', 'Pure Silk'],
+      borderType: 'Gopuram Border'
+    },
+    {
+      id: 5,
+      name: 'Saffron Temple Kanjivaram',
       price: '₹29,999',
       originalPrice: '₹36,999',
-      image: '/kanjivaram-temple-4.jpg',
+      image: '/temple-border-5.jpg',
       rating: 4.7,
       reviews: 112,
-      color: 'Green',
-      borderStyle: 'Traditional Temple',
-      description: 'Emerald green with classic temple border patterns',
-      features: ['Classic Temple', 'Contrast Border', 'Traditional'],
-      isNew: true
+      color: 'Saffron',
+      description: 'Traditional saffron with temple pillar borders',
+      features: ['Temple Pillars', 'Traditional Colors', 'Festival Wear'],
+      borderType: 'Pillar Border'
+    },
+    {
+      id: 6,
+      name: 'Purple Temple Elegance',
+      price: '₹37,999',
+      originalPrice: '₹45,999',
+      image: '/temple-border-6.jpg',
+      rating: 4.8,
+      reviews: 156,
+      color: 'Royal Purple',
+      description: 'Luxurious purple with intricate temple carvings border',
+      features: ['Temple Carvings', 'Heavy Silk', 'Wedding Collection'],
+      borderType: 'Sculpture Border'
     }
   ];
 
-  const templeMotifs = [
+  const borderTypes = [
     {
-      name: 'Peacock Motifs',
-      description: 'Symbol of beauty and grace in temple architecture',
-      icon: '🦚'
+      type: 'Gopuram Border',
+      description: 'Inspired by temple tower architecture with intricate gopuram designs',
+      icon: '🏛️'
     },
     {
-      name: 'Elephant Motifs',
-      description: 'Representing strength and royal heritage',
-      icon: '🐘'
+      type: 'Pillar Border',
+      description: 'Features traditional temple pillars with carved motifs',
+      icon: '🪨'
     },
     {
-      name: 'Floral Patterns',
-      description: 'Intricate floral designs from temple walls',
-      icon: '🌺'
-    },
-    {
-      name: 'Divine Figures',
-      description: 'Inspired by temple sculptures and deities',
+      type: 'Divine Figure Border',
+      description: 'Borders adorned with gods, goddesses, and celestial beings',
       icon: '🙏'
+    },
+    {
+      type: 'Sculpture Border',
+      description: 'Intricate temple sculpture and carving patterns',
+      icon: '🗿'
     }
   ];
 
@@ -117,32 +139,47 @@ export default function TempleBorderKanjivaramPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-100 to-rose-50 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-serif font-bold text-gray-900 mb-4">
-            Temple Border Kanjivaram
-          </h1>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Inspired by the magnificent architecture of South Indian temples. 
-            Each border tells a story of divine craftsmanship and ancient heritage.
-          </p>
+      <section className="bg-gradient-to-r from-amber-100 to-orange-50 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl font-serif font-bold text-gray-900 mb-4">
+              Temple Border Kanjivaram
+            </h1>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Exquisite sarees featuring intricate temple borders inspired by South Indian temple architecture. 
+              Each border tells a story of divine craftsmanship and cultural heritage.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Temple Motifs Section */}
+      {/* Border Types */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-serif font-bold text-center text-gray-900 mb-12">
-            Temple Border Motifs
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {templeMotifs.map((motif, index) => (
-              <div key={index} className="text-center group">
-                <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-red-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl">{motif.icon}</span>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">
+              Types of Temple Borders
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Discover the different styles of temple borders, each with unique symbolism and craftsmanship
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {borderTypes.map((border, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300"
+              >
+                <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">{border.icon}</span>
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{motif.name}</h3>
-                <p className="text-sm text-gray-600">{motif.description}</p>
+                <h3 className="font-semibold text-gray-900 text-lg mb-2">
+                  {border.type}
+                </h3>
+                <p className="text-sm text-gray-600">
+                  {border.description}
+                </p>
               </div>
             ))}
           </div>
@@ -152,38 +189,23 @@ export default function TempleBorderKanjivaramPage() {
       {/* Products Grid */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">
               Temple Border Collection
             </h2>
-            <p className="text-gray-600 text-lg">
-              {templeBorderProducts.length} exquisite temple border pieces
+            <p className="text-gray-600">
+              {templeBorderProducts.length} magnificent temple border pieces
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {templeBorderProducts.map((product) => (
               <div
                 key={product.id}
                 className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
               >
-                <div className="relative h-64 bg-gradient-to-br from-red-50 to-rose-100 flex items-center justify-center">
-                  <div className="text-4xl">🏛️</div>
-                  
-                  {/* Badges */}
-                  <div className="absolute top-3 left-3 flex flex-col space-y-2">
-                    {product.isNew && (
-                      <span className="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-semibold">
-                        New
-                      </span>
-                    )}
-                    {product.isBestseller && (
-                      <span className="bg-red-600 text-white px-2 py-1 rounded-full text-xs font-semibold">
-                        Bestseller
-                      </span>
-                    )}
-                  </div>
-
+                <div className="relative h-64 bg-gradient-to-br from-amber-50 to-orange-100 flex items-center justify-center">
+                  <div className="text-4xl">🛕</div>
                   <button
                     onClick={() => toggleWishlist(product.id)}
                     className={`absolute top-3 right-3 p-2 rounded-full transition-all duration-200 ${
@@ -198,33 +220,32 @@ export default function TempleBorderKanjivaramPage() {
                       }`}
                     />
                   </button>
+                  <div className="absolute top-3 left-3">
+                    <span className="bg-amber-600 text-white px-2 py-1 rounded text-xs font-semibold">
+                      {product.borderType}
+                    </span>
+                  </div>
                 </div>
 
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="font-semibold text-gray-900 text-lg leading-tight">
+                    <h3 className="font-semibold text-gray-900 text-lg">
                       {product.name}
                     </h3>
-                    <button className="text-gray-400 hover:text-gray-600 flex-shrink-0 ml-2">
+                    <button className="text-gray-400 hover:text-gray-600">
                       <Share2 className="w-5 h-5" />
                     </button>
                   </div>
 
-                  <p className="text-gray-600 text-sm mb-3 leading-relaxed">
+                  <p className="text-gray-600 text-sm mb-3">
                     {product.description}
                   </p>
-
-                  <div className="mb-3">
-                    <span className="text-xs font-medium text-amber-700 bg-amber-100 px-2 py-1 rounded">
-                      {product.borderStyle}
-                    </span>
-                  </div>
 
                   <div className="flex flex-wrap gap-1 mb-4">
                     {product.features.map((feature, index) => (
                       <span
                         key={index}
-                        className="bg-rose-100 text-rose-800 px-2 py-1 rounded text-xs"
+                        className="bg-amber-100 text-amber-800 px-2 py-1 rounded text-xs"
                       >
                         {feature}
                       </span>
@@ -253,7 +274,7 @@ export default function TempleBorderKanjivaramPage() {
                         {product.originalPrice}
                       </span>
                     </div>
-                    <button className="bg-rose-600 text-white px-4 py-2 rounded-lg hover:bg-rose-700 transition-colors duration-200 text-sm font-semibold">
+                    <button className="bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700 transition-colors duration-200 text-sm font-semibold">
                       Add to Cart
                     </button>
                   </div>
@@ -265,47 +286,58 @@ export default function TempleBorderKanjivaramPage() {
       </section>
 
       {/* Temple Border Significance */}
-      <section className="py-12 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-gradient-to-br from-rose-100 to-red-100 rounded-2xl p-8 h-80 flex items-center justify-center">
-              <div className="text-6xl">🛕</div>
+            <div className="bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl p-8 h-80 flex items-center justify-center">
+              <div className="text-6xl">🏛️</div>
             </div>
             <div>
               <h2 className="text-3xl font-serif font-bold text-gray-900 mb-6">
-                Significance of Temple Borders
+                The Significance of Temple Borders
               </h2>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <div className="w-8 h-8 bg-rose-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-sm">📜</span>
+                  <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-sm">🕌</span>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-semibold text-gray-900">Historical Heritage</h4>
+                    <h4 className="font-semibold text-gray-900">Architectural Inspiration</h4>
                     <p className="text-gray-600 text-sm mt-1">
-                      Designs inspired by ancient temple architecture dating back to Pallava and Chola dynasties.
+                      Borders inspired by Dravidian temple architecture featuring gopurams, pillars, and intricate carvings.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-8 h-8 bg-rose-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-sm">🙏</span>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="font-semibold text-gray-900">Divine Symbolism</h4>
+                    <p className="text-gray-600 text-sm mt-1">
+                      Motifs of gods, goddesses, and celestial beings that carry spiritual significance and blessings.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-sm">⚡</span>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-semibold text-gray-900">Divine Connection</h4>
+                    <h4 className="font-semibold text-gray-900">Technical Mastery</h4>
                     <p className="text-gray-600 text-sm mt-1">
-                      Each motif carries spiritual significance and blessings from temple deities.
+                      Requires exceptional weaving skill to create symmetrical temple patterns with perfect precision.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-8 h-8 bg-rose-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-sm">🎨</span>
+                  <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-sm">🎭</span>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-semibold text-gray-900">Artistic Excellence</h4>
+                    <h4 className="font-semibold text-gray-900">Cultural Heritage</h4>
                     <p className="text-gray-600 text-sm mt-1">
-                      Requires master weavers with specialized skills in temple border patterns.
+                      Each design preserves centuries-old traditions and stories from South Indian temple culture.
                     </p>
                   </div>
                 </div>
@@ -315,26 +347,35 @@ export default function TempleBorderKanjivaramPage() {
         </div>
       </section>
 
-      {/* Care Instructions for Temple Borders */}
-      <section className="py-12 bg-rose-50">
+      {/* Care Instructions */}
+      <section className="py-12 bg-amber-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-serif font-bold text-center text-gray-900 mb-8">
-            Caring for Temple Border Sarees
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg p-6 text-center">
-              <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">
+              Caring for Temple Border Kanjivarams
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div className="bg-white rounded-2xl p-6">
+              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
                 <span className="text-xl">🧼</span>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Professional Dry Clean</h3>
-              <p className="text-sm text-gray-600">Essential for preserving intricate zari work on temple borders</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Dry Clean Only</h3>
+              <p className="text-sm text-gray-600">Preserve the intricate zari work with professional dry cleaning</p>
             </div>
-            <div className="bg-white rounded-lg p-6 text-center">
-              <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white rounded-2xl p-6">
+              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
                 <span className="text-xl">📦</span>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Flat Storage</h3>
-              <p className="text-sm text-gray-600">Store flat to maintain border shape and prevent creases</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Proper Storage</h3>
+              <p className="text-sm text-gray-600">Store in muslin cloth to protect temple borders from damage</p>
+            </div>
+            <div className="bg-white rounded-2xl p-6">
+              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span className="text-xl">🛡️</span>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Handle with Care</h3>
+              <p className="text-sm text-gray-600">Avoid sharp objects that can snag the delicate temple motifs</p>
             </div>
           </div>
         </div>
@@ -345,7 +386,7 @@ export default function TempleBorderKanjivaramPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Link
             href="/sarees/category/kanjivaram-silk"
-            className="inline-flex items-center text-rose-600 hover:text-rose-700 font-semibold"
+            className="inline-flex items-center text-amber-600 hover:text-amber-700 font-semibold"
           >
             <ChevronLeft className="w-5 h-5 mr-2" />
             Back to Kanjivaram Collection
